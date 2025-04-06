@@ -4,7 +4,7 @@ export default async function handler(req, res) {
 
     try {
       const shop = 'wteraz-01.myshopify.com';
-      const accessToken = process.env.SHOPIFY_ADMIN_TOKEN;
+      const accessToken = process.env.SHOPIFY_API_TOKEN;
 
       const response = await fetch(`https://${shop}/admin/api/2023-07/customers.json`, {
         method: 'POST',
